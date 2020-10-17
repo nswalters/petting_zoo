@@ -19,5 +19,8 @@ def main():
 
     print(myBass)
 
+    roberto = Llama("Roberto", "alpaca", "midday")
+    print(f'{roberto.name} the {roberto.species} is available to pet during the {roberto.shift} shift.')
+
 
 main()
