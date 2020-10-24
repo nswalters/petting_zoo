@@ -14,6 +14,10 @@ class PettingZoo:
             print(
                 f'\t* {animal.name} the {animal.species}')
 
+    @property  # getter
+    def last_critter_added(self):
+        return f'\t* {self.animals[-1].name} the {self.animals[-1].species}'
+
 
 class SnakePit:
 
@@ -31,6 +35,10 @@ class SnakePit:
             print(
                 f'\t* {animal.name} the {animal.species}')
 
+    @property  # getter
+    def last_critter_added(self):
+        return f'\t* {self.animals[-1].name} the {self.animals[-1].species}'
+
 
 class Wetlands:
 
@@ -47,3 +55,7 @@ class Wetlands:
         for animal in self.animals:
             print(
                 f'\t* {animal.name} the {animal.species}')
+
+    @property  # getter
+    def last_critter_added(self):
+        return f'\t* {self.animals[-1].name} the {self.animals[-1].species}'

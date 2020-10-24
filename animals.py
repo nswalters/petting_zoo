@@ -35,6 +35,11 @@ def main():
     print(giddy_up.feed())
     varmint_village.add_animal(giddy_up)
 
+    moo_moo = Cow("Betsy", "Holstein", "morning", "Cow Chow", 12345)
+    print(moo_moo.feed())
+    print(moo_moo.chip_number)
+    varmint_village.add_animal(moo_moo)
+
     # slither-ers??
     slimy_stan = GardenSnake(
         "Slimy Stan", "Slimy Garden Snake", "mice")
@@ -47,6 +52,18 @@ def main():
     slither_inn.get_animals()
     print("******")
     bubbling_brook.get_animals()
+
+    print("******")
+    print("******")
+    print("LAST VARMINT: ", varmint_village.last_critter_added)
+
+    print("******")
+    print("******")
+    print("LAST SLITHER: ", slither_inn.last_critter_added)
+
+    print("******")
+    print("******")
+    print("LAST BUBBLING: ", bubbling_brook.last_critter_added)
 
 
 main()
