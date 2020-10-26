@@ -23,15 +23,17 @@ def main():
     bubbling_brook = Wetlands('Bubbling Brook')
 
     # swimmers
-    myBass = Bass("Wall Singer", "Black Bass", "Bass Nibbles")
+    myBass = Bass("Wall Singer", "Black Bass", "Bass Nibbles", 123)
     bubbling_brook.add_animal(myBass)
 
     # walkers
-    miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
+    miss_fuzz = Llama("Miss Fuzz", "domestic llama",
+                      "morning", "Llama Chow", 456)
     print(miss_fuzz.feed())
     varmint_village.add_animal(miss_fuzz)
 
-    giddy_up = Horse("Giddy Up", "Friendly Mustang", "afternoon", "Horse Chow")
+    giddy_up = Horse("Giddy Up", "Friendly Mustang",
+                     "afternoon", "Horse Chow", 789)
     print(giddy_up.feed())
     varmint_village.add_animal(giddy_up)
 
@@ -42,7 +44,7 @@ def main():
 
     # slither-ers??
     slimy_stan = GardenSnake(
-        "Slimy Stan", "Slimy Garden Snake", "mice")
+        "Slimy Stan", "Slimy Garden Snake", "mice", 2222)
     print(slimy_stan.feed())
     slither_inn.add_animal(slimy_stan)
 
