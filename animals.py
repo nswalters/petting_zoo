@@ -1,26 +1,13 @@
-from bass import Bass
-from chicken import Chicken
-from copperhead import CopperHead
-from coralsnake import CoralSnake
-from cow import Cow
-from duck import Duck
-from gardensnake import GardenSnake
-from goat import Goat
-from goose import Goose
-from horse import Horse
-from llama import Llama
-from rattlesnake import RattleSnake
-from swan import Swan
-from turtle import Turtle
-
+from animals import Bass, Llama, Horse, Cow, GardenSnake, Goose
 from attractions import PettingZoo, SnakePit, Wetlands
 
 
 def main():
 
-    varmint_village = PettingZoo("Varmint Village")
-    slither_inn = SnakePit('Slither Inn')
-    bubbling_brook = Wetlands('Bubbling Brook')
+    varmint_village = PettingZoo(
+        "Varmint Village", "cute and fuzzy critters to cuddle")
+    slither_inn = SnakePit('Slither Inn', "stupendous snakes of all sizes")
+    bubbling_brook = Wetlands('Bubbling Brook', "feathery and wet critters")
 
     # swimmers
     myBass = Bass("Wall Singer", "Black Bass", "Bass Nibbles", 123)

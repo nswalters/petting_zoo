@@ -1,1 +1,0 @@
-from .cow import Cow
